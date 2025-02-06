@@ -3,10 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vanilla JS Webpack</title>
+    <title>Speech Processing App</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Hello, Webpack!</h1>
-    <script src="bundle.js"></script>
+    <h1>Speech Processing App</h1>
+
+    <div class="container">
+        <h2>Upload Audio File</h2>
+        <input type="file" id="audioFile" accept="audio/*">
+        <button id="uploadBtn">Upload</button>
+    </div>
+
+    <div class="container">
+        <h2>Record Audio</h2>
+        <button id="recordBtn">Start Recording</button>
+        <button id="stopBtn" disabled>Stop Recording</button>
+        <audio id="audioPlayback" controls></audio>
+        <button id="uploadRecordingBtn" disabled>Upload Recording</button>
+    </div>
+
+    <script src="index.js"></script>
 </body>
 </html>
+
+
